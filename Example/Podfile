@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MTHelperExtensions_Example' do
+  pod 'MTHelperExtensions', :path => '../'
+
+  target 'MTHelperExtensions_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
