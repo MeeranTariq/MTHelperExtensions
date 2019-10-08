@@ -1,0 +1,16 @@
+PODS:
+  - MTHelperExtensions (0.1.0)
+
+DEPENDENCIES:
+  - MTHelperExtensions (from `../`)
+
+EXTERNAL SOURCES:
+  MTHelperExtensions:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MTHelperExtensions: 2fd8bf02242da77452096ff5c51ba844ce180118
+
+PODFILE CHECKSUM: f924ee74935d8beb67b498fada8ea2fa2e991a84
+
+COCOAPODS: 1.7.5

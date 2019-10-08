@@ -1,0 +1,6 @@
+framework module MTHelperExtensions {
+  umbrella header "MTHelperExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}
