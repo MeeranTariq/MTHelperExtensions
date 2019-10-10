@@ -9,7 +9,7 @@ import UIKit
 
 extension UIViewController {
     
-    func showAlertControllerWith(title: String,
+    public func showAlertControllerWith(title: String,
                                  message: String,
                                  actions: [UIAlertAction]?,
                                  completion: (() -> Void)? = nil){
@@ -32,7 +32,7 @@ extension UIViewController {
         }
     }
     
-    func showAlertControllerWithError(title: String,
+    public func showAlertControllerWithError(title: String,
                                       error: Error?,
                                       message: String,
                                       actions: [UIAlertAction],

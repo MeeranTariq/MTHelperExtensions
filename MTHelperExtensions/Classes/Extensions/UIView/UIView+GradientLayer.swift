@@ -9,7 +9,7 @@ import UIKit
 
 extension UIView {
     // For insert layer in Foreground
-    func addGradientLayerInForeground(colors: [UIColor]) {
+    public func addGradientLayerInForeground(colors: [UIColor]) {
         
         let gradient = CAGradientLayer()
         
@@ -20,7 +20,7 @@ extension UIView {
     }
     
     // For insert layer in background
-    func addGradientLayerInBackground(colors: [UIColor]) {
+    public func addGradientLayerInBackground(colors: [UIColor]) {
         
         let gradient = CAGradientLayer()
         

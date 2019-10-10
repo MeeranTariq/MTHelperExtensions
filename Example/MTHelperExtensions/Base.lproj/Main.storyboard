@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,10 +18,79 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test label for validating the functionality of setMultiColor extension function" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7P-A8-ssM">
+                                <rect key="frame" x="36" y="68" width="342" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IX9-UE-PMX">
+                                <rect key="frame" x="123" y="172" width="168" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Show Alert Dialog">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAlertDialog:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9bU-PN-Fjo"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Text field" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PUH-dC-P7v">
+                                <rect key="frame" x="36" y="232" width="342" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="taZ-5M-nho"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="UITextView for testing ..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vcn-RT-rGh">
+                                <rect key="frame" x="36" y="301" width="342" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="GSO-zJ-3yR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testing #Hash #Tags" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bG7-cr-4Dg">
+                                <rect key="frame" x="36" y="127" width="342" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bG7-cr-4Dg" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="1D7-tu-BSO"/>
+                            <constraint firstItem="o7P-A8-ssM" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="5gF-ZO-f1c"/>
+                            <constraint firstItem="bG7-cr-4Dg" firstAttribute="top" secondItem="o7P-A8-ssM" secondAttribute="bottom" constant="16" id="ACZ-br-USf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PUH-dC-P7v" secondAttribute="trailing" constant="16" id="BoI-FO-dzw"/>
+                            <constraint firstItem="Vcn-RT-rGh" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="CDo-NB-2fi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="o7P-A8-ssM" secondAttribute="trailing" constant="16" id="Fyk-YE-IFT"/>
+                            <constraint firstItem="PUH-dC-P7v" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="NWo-9I-6jS"/>
+                            <constraint firstItem="Vcn-RT-rGh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="NZ5-1A-CaY"/>
+                            <constraint firstItem="IX9-UE-PMX" firstAttribute="top" secondItem="bG7-cr-4Dg" secondAttribute="bottom" constant="24" id="Phz-QP-dAU"/>
+                            <constraint firstItem="PUH-dC-P7v" firstAttribute="top" secondItem="IX9-UE-PMX" secondAttribute="bottom" constant="24" id="SF4-8f-O6f"/>
+                            <constraint firstItem="PUH-dC-P7v" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="V31-1v-D9B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bG7-cr-4Dg" secondAttribute="trailing" constant="16" id="W6r-pc-NAs"/>
+                            <constraint firstItem="o7P-A8-ssM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="YDT-8F-uGK"/>
+                            <constraint firstItem="o7P-A8-ssM" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" multiplier="0.2" id="bsl-IW-Ph0"/>
+                            <constraint firstItem="bG7-cr-4Dg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="d2W-7k-Rnc"/>
+                            <constraint firstItem="IX9-UE-PMX" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="dDU-NK-RZs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vcn-RT-rGh" secondAttribute="trailing" constant="16" id="deK-jD-mJ8"/>
+                            <constraint firstItem="Vcn-RT-rGh" firstAttribute="top" secondItem="PUH-dC-P7v" secondAttribute="bottom" constant="24" id="mYt-Cz-vdU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alertButton" destination="IX9-UE-PMX" id="6BK-2w-6XJ"/>
+                        <outlet property="hashTagLabel" destination="bG7-cr-4Dg" id="Gew-X6-UuD"/>
+                        <outlet property="testLabel" destination="o7P-A8-ssM" id="Ku9-nb-MVe"/>
+                        <outlet property="testTextView" destination="Vcn-RT-rGh" id="aFw-gD-SZZ"/>
+                        <outlet property="testTextfield" destination="PUH-dC-P7v" id="n0b-ce-JUm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

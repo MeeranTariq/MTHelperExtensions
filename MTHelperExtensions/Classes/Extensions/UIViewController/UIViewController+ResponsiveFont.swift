@@ -12,7 +12,7 @@ extension UIViewController {
     /* IMPORTANT */
     /* maxFontSize means the font size suitable for iPhone XSMAX */
     
-    func adjustFontSizeAccordingToScreen(for view: UIView, maxFontSize: CGFloat){
+    public func adjustFontSizeAccordingToScreen(for view: UIView, maxFontSize: CGFloat){
         
         var desiredFontSize: CGFloat = 0
         

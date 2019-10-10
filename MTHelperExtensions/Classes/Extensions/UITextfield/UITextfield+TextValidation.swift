@@ -9,13 +9,13 @@ import UIKit
 
 extension UITextField {
     
-    var textAfterRemovingWhiteSpaces: String? {
+    public var textAfterRemovingWhiteSpaces: String? {
         get {
             return self.text?.trimmingCharacters(in: .whitespaces)
         }
     }
     
-    func isTextValid(minCharCheck: Int = 3) -> Bool{
+    public func isTextValid(minCharCheck: Int = 3) -> Bool{
         
         let text = self.textAfterRemovingWhiteSpaces
         

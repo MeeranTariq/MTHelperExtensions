@@ -9,16 +9,22 @@ import UIKit
 
 extension UITextView {
     
-    func makeCornersRounded() {
+    public func makeCornersRounded() {
         self.layer.cornerRadius = 5
     }
     
-    func addPaddings() {
+    public func addPaddings() {
         self.layer.sublayerTransform = CATransform3DMakeTranslation(5, 5, 5)
     }
     
-    func addBorders() {
+    public func addBorders() {
         self.layer.borderWidth = 0.5
         self.layer.borderColor = UIColor(white: 0.75, alpha: 1.0).cgColor
+    }
+    
+    public func applyUITextfieldAppearance() {
+        makeCornersRounded()
+        addBorders()
+        addPaddings()
     }
 }

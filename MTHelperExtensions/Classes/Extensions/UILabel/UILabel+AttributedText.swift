@@ -9,7 +9,7 @@ import UIKit
 
 extension UILabel {
     
-    func setMultiColor (
+    public func setMultiColor (
         originalText: String,
         toChangeText: String...,
         color: UIColor,
@@ -35,7 +35,7 @@ extension UILabel {
         self.attributedText = attribute
     }
     
-    func setHashTags(on string: String, hashTagColor: UIColor) {
+    public func setHashTags(on string: String, hashTagColor: UIColor) {
         
         let attrStr = NSMutableAttributedString(string: string)
         let searchPattern = "#\\w+"
